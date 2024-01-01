@@ -45,8 +45,8 @@ const ORDER_SCHEMA = new mongoose.Schema({
     status: {
         type: String,
         required: true,
-        default: 'processing',
-        enum: ['delivered', 'processing', 'out for delivery', "new"]
+        default: 'new',
+        // enum: ['delivered', 'processing', 'out for delivery', "new"]
     },
     payment_method: {
         type: String,
