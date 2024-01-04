@@ -51,6 +51,33 @@ const RIDER_SCEHMA = new mongoose.Schema({
         type: String,
         required: true,
         default: "https://fastly.picsum.photos/id/829/1000/1000.jpg"
+    },
+    reference_contact_1: {
+        type: Map,
+    },
+    reference_contact_2: {
+        type: Map,
+    },
+    acc_holder: {
+        type: String,
+    },
+    acc_no: {
+        type: String,
+    },
+    acc_ifsc: {
+        type: String,
+    },
+    vehicle: {
+        type: String,
+    },
+    address: {
+        type: String
+    },
+    aadhar_number: {
+        type: String,
+    },
+    pan_number: {
+        type: String
     }
 })
 

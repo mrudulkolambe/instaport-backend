@@ -9,7 +9,7 @@ router.get("/orders", allOrders)
 
 router.get("/customer/orders", CustomerToken, customerOrders)
 
-router.get("/customer/:_id", CustomerToken, orderByIDCustomer)
+router.get("/customer/:_id", orderByIDCustomer)
 
 router.post("/create", CustomerToken, createOrder)
 

@@ -35,7 +35,7 @@ const customerOrders = async (req, res) => {
 }
 
 const orderByIDCustomer = async (req, res) => {
-    const order = await Order.findOne({ _id: req.params._id, customer: req.customer._id });
+    const order = await Order.findOne({ _id: req.params._id });
     if (!order) {
         res.json({ error: true, message: "Something Went Wrong", order: undefined })
     } else {
